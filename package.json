@@ -36,6 +36,6 @@
   "author": "Luying Min",
   "license": "ISC",
   "engines": {
-    "node": "8.1.x"
+    "node": "7.x.x"
   }
 }
