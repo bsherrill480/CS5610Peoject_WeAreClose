@@ -1,7 +1,7 @@
 {
   "name": "web-dev",
   "version": "1.0.0",
-  "description": "CS5610 WebDev 2017 Summer",
+  "description": "CS5610 WebDev 2017 Summer Project",
   "main": "server.js",
   "dependencies": {
     "bcrypt": "^1.0.2",
