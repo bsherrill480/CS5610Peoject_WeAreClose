@@ -26,9 +26,7 @@
     "password": "^0.1.1",
     "q": "^1.5.0",
     "sessions": "0.0.2-7",
-    "textangular": "^1.5.16",
-    "yelp": "^1.0.2",
-    "yelp-fusion": "^1.0.3"
+    "textangular": "^1.5.16"
   },
   "devDependencies": {},
   "scripts": {
@@ -36,5 +34,8 @@
     "start": "node server.js"
   },
   "author": "Luying Min",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": "8.1.x"
+  }
 }
