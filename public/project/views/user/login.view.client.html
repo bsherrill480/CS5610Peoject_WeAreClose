@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <div class="wrapper">
+        <form action="" method="post" name="Login_Form" class="form-signin">
+            <h3 class="form-signin-heading">Welcome Back! Please Sign In</h3>
+            <hr class="colorgraph"><br>
+
+            <div ng-show="model.message" class="alert alert-info">
+                {{model.message}}
+            </div>
+
+            <input type="text" class="form-control" name="Username" placeholder="Username"  ng-model="username" />
+            <input type="password" class="form-control" name="Password" placeholder="Password" ng-model="password"/>
+
+            <a class="btn btn-primary btn-block" ng-click="model.login(username, password)">Login</a>
+
+            <a href="/auth/facebook" class="btn btn-primary btn-block"> <span class="fa fa-facebook"></span>
+                Facebook
+            </a>
+
+            <a class="btn btn-success btn-block"  href="#!/register">Register</a>
+        </form>
+    </div>
+</div>

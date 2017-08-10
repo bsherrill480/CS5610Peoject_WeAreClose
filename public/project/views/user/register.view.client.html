@@ -1,0 +1,37 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+            <form role="form">
+                <h2>Please Sign Up <small>It's free and always will be.</small></h2>
+                <hr class="colorgraph">
+
+                <div class="row">
+
+                    <div class="form-group">
+                        <input ng-model="username" type="username" name="username" id="username" class="form-control input-lg" placeholder="username" tabindex="4">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <input ng-model="password" type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <input ng-model="vpassword" type="password" name="vpassword" id="vpassword" class="form-control input-lg" placeholder="Confirm Password" tabindex="6">
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="colorgraph">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg"ng-click="model.register(username, password, vpassword)" tabindex="7"></div>
+                        <div class="col-xs-12 col-md-6"><a href="#!/login" class="btn btn-danger btn-block btn-lg">Cancel</a></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

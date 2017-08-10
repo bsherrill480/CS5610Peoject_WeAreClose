@@ -1,0 +1,19 @@
+<nav ng-controller="HeaderController" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">
+                <span class="glyphicon glyphicon-bell"></span>
+                We are close
+            </a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-show="loggedIn()"><a href="#!/profile">{{username()}}</a></li>
+                <li ng-show="isAdmin()"><a href="#!/manageUser">Manage User</a></li>
+                <li ng-show="loggedIn()"><a ng-click="logout()" href="#!/login">Sign Out</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>

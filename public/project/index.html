@@ -1,0 +1,67 @@
+<!doctype html>
+<!-- Declares meanMapApp as the starting Angular module -->
+<html class="no-js" ng-app="Project">
+
+<head>
+    <meta charset="utf-8">
+    <title>Project</title>
+    <meta name="description" content="An example demonstrating Google Map integration with MEAN Apps">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel= "stylesheet">
+    <link href="css/style.css" rel="stylesheet"/>
+
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBubBYbbDaexkArI7avtJuZSdOfAgLKMD0"></script>
+    <!-- Modernizr -->
+    <!--<script src="../bower_components/modernizr/bin/modernizr"></script>-->
+    <!-- JS Source -->
+
+    <!--<script src="../bower_components/jquery/jquery.js"></script>-->
+    <!--<script src="../bower_components/angular/angular.js"></script>-->
+    <!--<script src="../bower_components/angular-route/angular-route.js"></script>-->
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
+
+
+    <script src="../bower_components/angularjs-geolocation/dist/angularjs-geolocation.min.js"></script>
+
+
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Angular Source -->
+    <script src="js/app.js"></script>
+    <script src="config.js"></script>
+    <script src="js/addCtrl.js"></script>
+    <script src="js/gservice.js"></script>
+    <script src="js/queryCtrl.js"></script>
+
+    <!--Controllers-->
+    <script src="views/user/user.controller.client.js"></script>
+    <script src="views/header/header.controller.client.js"></script>
+    <script src="views/admin/admin.controller.js"></script>
+
+    <script src="js/addCtrl.js"></script>
+    <script src="js/gservice.js"></script>
+
+    <!--Services-->
+    <script src="services/user.service.client.js"></script>
+    <!--<script src="services/website.service.client.js"></script>-->
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div ng-include="'views/header/header.view.html'"></div>
+        <div class="row">
+            <div ng-view>
+
+            </div>
+        </div>
+        <!--<div ng-include="'views/footer/footer.view.html'"></div>-->
+    </div>
+
+</body>

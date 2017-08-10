@@ -1,0 +1,1 @@
+var app = angular.module('Project', ['addCtrl', 'queryCtrl','geolocation', 'gservice', 'ngRoute']);
